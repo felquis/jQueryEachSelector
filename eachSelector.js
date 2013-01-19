@@ -9,14 +9,12 @@
 	$.eachSelector = function () {
 
 		var allSelectors = arguments,
-			len = allSelectors.length,
-			i = 1,
 			selector = $(allSelectors[0]);
 
-		if (len > 1) {
-			for (i; i < len; i++) {
-				selector = selector.add(allSelectors[i]);
-			}
+		if (allSelectors.length > 1) {
+			$.each(allSelectors, function (i, element) {
+				selector = selector.add(element);
+			});
 		}
 
 		return selector;
