@@ -4,19 +4,19 @@
 /*jslint plusplus: true, indent: 4 */
 
 (function ($) {
-	"use strict";
+    "use strict";
 
-	$.eachSelector = function () {
+    $.eachSelector = function () {
 
-		var allSelectors = arguments,
-			selector = $(allSelectors[0]);
+        var allSelectors = arguments,
+            selector = $(allSelectors[0]);
 
-		if (allSelectors.length > 1) {
-			$.each(allSelectors, function (i, element) {
-				selector = selector.add(element);
-			});
-		}
+        if (allSelectors.length > 1) {
+            $.each(allSelectors, function (i, element) {
+                selector = selector.add(element);
+            });
+        }
 
-		return selector;
-	};
+        return selector;
+    };
 }(jQuery));
