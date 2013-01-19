@@ -24,7 +24,7 @@ To do the same without using this plugin, do as follows:
       color : 'red'
   });
 ```
-It will work perfectly.
+This will work perfectly, but it is hard to understand, do not you think?
 
 ## Thanks
 To [me](http://github.com/felquis), and to my [friend](http://github.com/DiegoLopesLima) who helped me a lot
