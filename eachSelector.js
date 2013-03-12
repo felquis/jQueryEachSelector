@@ -8,14 +8,11 @@
 
     $.eachSelector = function () {
 
-        var allSelectors = arguments,
-            selector = $(allSelectors[0]);
+        var selector = $();
 
-        if (allSelectors.length > 1) {
-            $.each(allSelectors, function (i, element) {
-                selector = selector.add(element);
-            });
-        }
+        $.each(arguments, function (i, element) {
+            selector = selector.add(element);
+        });
 
         return selector;
     };
