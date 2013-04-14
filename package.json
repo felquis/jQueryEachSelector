@@ -1,0 +1,24 @@
+{
+  "name": "jQueryEachSelector",
+  "version": "0.0.1",
+  "author": "Ofelquis <oi@felquis.com>",
+  "description": "Select multiple elements with complicated selectors to do the same action",
+  "contributors": [
+    {
+      "name": "Ofelquis Gimenes",
+      "email": "oi@felquis.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felquis/jQueryEachSelector.git"
+  },
+  "devDependencies": {
+    "grunt"   : "~0.4.1",
+    "grunt-contrib-uglify" : "~0.1.2"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
