@@ -5,8 +5,8 @@ module.exports = function(grunt) {
     uglify : {
       min: {
         options : {
-          banner :"/*\r\t<%= pkg.name %> v<%= pkg.version %> by <%= pkg.author %>\r"+
-                  "\tSource <%= pkg.repository.url %>\r*/\r"
+          banner :"/*\r    <%= pkg.name %> v<%= pkg.version %> by <%= pkg.author %>\r"+
+                  "    Source <%= pkg.repository.url %>\r*/\r"
         },
         files : {
           "build/eachSelector.min.js" : ["source/eachSelector.js"]
