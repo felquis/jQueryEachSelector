@@ -9,6 +9,9 @@
       "email": "oi@felquis.com"
     }
   ],
+  "scripts": {
+    "test": "grunt"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/felquis/jQueryEachSelector.git"
