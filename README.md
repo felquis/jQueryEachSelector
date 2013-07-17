@@ -1,9 +1,9 @@
 ## jQueryEachSelector
 
-Looking for a description, see example below.
+Select in the DOM multiple elements with complicated/complex selectors to do the same action in all.
 
 ## How to use
-select multiple elements with complicated selectors.
+select multiple elements with complex selectors.
 
 ```js
 $.eachSelector([
@@ -25,9 +25,6 @@ To do the same without using this plugin, do as follows:
   });
 ```
 This will work perfectly, but it is hard to understand, do not you think?
-
-## Thanks
-To [me](http://github.com/felquis), and to my [friend](http://github.com/DiegoLopesLima) who helped me a lot
 
 ## License
 Use in everything you feel necessary.

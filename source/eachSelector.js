@@ -1,8 +1,5 @@
 /* http://github.com/felquis/jQueryEachSelector */
 
-/*global jQuery: true */
-/*jslint plusplus: true, indent: 4 */
-
 (function ($) {
     "use strict";
 
@@ -10,8 +7,8 @@
 
         var selector = $();
 
-        $.each(arguments, function (i, element) {
-            selector = selector.add(element);
+        $.each(arguments, function () {
+            selector = selector.add(this);
         });
 
         return selector;

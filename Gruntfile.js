@@ -1,21 +1,35 @@
+/*jslint node:true*/
+
 module.exports = function(grunt) {
+    'use strict';
 
-  grunt.initConfig({
-    pkg : grunt.file.readJSON('package.json'),
-    uglify : {
-      min: {
-        options : {
-          banner :"/*\r    <%= pkg.name %> v<%= pkg.version %> by <%= pkg.author %>\r"+
-                  "    Source <%= pkg.repository.url %>\r*/\r"
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        jslint: {
+            files: ['source/**/*.js', 'Gruntfile.js'],
+            directives: {
+                browser: true,
+                indent: 4,
+                predef: [
+                    'jQuery'
+                ]
+            }
         },
-        files : {
-          "build/eachSelector.min.js" : ["source/eachSelector.js"]
+        uglify: {
+            min: {
+                options: {
+                    banner: '/* <%= pkg.name %> v<%= pkg.version %> by <%= pkg.author %> - source <%= pkg.repository.url %> */'
+                },
+                files: {
+                    'build/eachSelector.min.js': ['source/eachSelector.js']
+                }
+            }
         }
-      }
-    }
-  });
+    });
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-jslint');
 
-  grunt.registerTask('default', ['uglify:min']);
+    grunt.registerTask('test', ['jslint']);
+    grunt.registerTask('default', ['jslint', 'uglify:min']);
 };
