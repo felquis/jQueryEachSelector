@@ -32,4 +32,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('test', ['jslint']);
     grunt.registerTask('default', ['jslint', 'uglify:min']);
+    grunt.registerTask('build', ['jslint', 'uglify:min']);
 };
