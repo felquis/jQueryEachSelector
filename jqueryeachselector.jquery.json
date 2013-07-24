@@ -1,0 +1,22 @@
+{
+    "name": "jqueryeachselector",
+    "title": "jQuery Each Selector",
+    "version": "0.0.2",
+    "author": {
+        "name" : "Felquis Gimenes",
+        "email" : "oi@felquis.com",
+        "url" : "http://felquis.com/"
+    },
+    "dependencies": {
+        "jquery": ">1.7"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "description": "Select in the DOM multiple elements with complicated/complex selectors to do the same action in all",
+    "keywords": ["multiple", "selector"],
+    "bugs": "https://github.com/felquis/jQueryEachSelector/issues"
+}
