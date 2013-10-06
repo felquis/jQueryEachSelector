@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('test', ['jslint:all', 'connect:test', 'qunit', 'uglify:min']);
+    grunt.registerTask('test', ['jslint:all', 'connect:test', 'qunit']);
     grunt.registerTask('default', ['jslint:all', 'connect:test', 'qunit', 'uglify:min']);
-    grunt.registerTask('build', ['jslint:all', 'connect:test', 'qunit', 'uglify:min']);
+    grunt.registerTask('build', ['test', 'uglify:min']);
 };
