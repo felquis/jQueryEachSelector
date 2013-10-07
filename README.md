@@ -1,4 +1,4 @@
-## jQueryEachSelector
+## jQueryEachSelector [![Build Status](https://travis-ci.org/felquis/jQueryEachSelector.png?branch=master)](https://travis-ci.org/felquis/jQueryEachSelector)
 
 Select multiple elements with complex selectors to do the same action in all.
 
