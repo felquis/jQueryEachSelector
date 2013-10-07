@@ -7,9 +7,9 @@ select multiple elements with complex selectors.
 
 ```js
 $.eachSelector([
-	$('#element').find('a.test'),
-	'#otherElement > a',
-	$('input[name="test"]').parents('p')
+  $('#element').find('a.test'),
+  '#otherElement > a',
+  $('input[name="test"]').parents('p')
 ]).css({ color : 'yellow'});
 ```
 
