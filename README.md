@@ -1,9 +1,9 @@
 ## jQueryEachSelector
 
-Select in the DOM multiple elements with complicated/complex selectors to do the same action in all.
+Select multiple elements with complex selectors to do the same action in all.
 
 ## How to use
-select multiple elements with complex selectors.
+Pass a array of selectors to the plugin function, as below:
 
 ```js
 $.eachSelector([
@@ -13,8 +13,10 @@ $.eachSelector([
 ]).css({ color : 'yellow'});
 ```
 
+The plugin will concatenate the selectors and returns them.
+
 ## Another approach
-To do the same without using this plugin, do as follows:
+To do the same thing without using this plugin, do as below:
 ```js
   $('.element').find('> a.test').add(
     $('#otherElement > a')
@@ -24,10 +26,10 @@ To do the same without using this plugin, do as follows:
       color : 'red'
   });
 ```
-This will work perfectly, but it is hard to understand, do not you think?
+This works perfectly, but it is hard to write and understand, don't you thing?
 
 ## Browser support
-This plugin works fine from jQuery 1.4 until the last version
+This plugin works fine from jQuery 1.4 until the last version.
 
 ## Build this project
 Install [NodeJS](http://nodejs.org/download/), [GIT](http://git-scm.com/downloads) if you don't have it yet, [bower](http://bower.io/) and [grunt](http://gruntjs.com/)
